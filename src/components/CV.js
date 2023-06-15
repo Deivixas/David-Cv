@@ -1,13 +1,14 @@
-import './App.css';
-import Profile from '../src/assets/3.jpg';
-import Image from '../src/assets/1.png'
-import {FaLinkedin} from 'react-icons/fa'
+import React from 'react';
+import '../components/CV.css';
+import Image from '../assets/1.png';
+import Profile from '../assets/3.jpg';
 import { SiGmail } from 'react-icons/si';
 import { BsTelephoneFill } from 'react-icons/bs';
 import { FaBirthdayCake } from 'react-icons/fa';
 import { FaHome } from 'react-icons/fa';
 import {FaGithub} from 'react-icons/fa';
-function App() {
+import {FaLinkedin} from 'react-icons/fa'
+function CV() {
   return (
     <div>
 <div className='header'>
@@ -20,7 +21,7 @@ function App() {
       <div className="cv-column">
          
         <section>
-        <h2>Contacts</h2>
+        <h2>Kontaktai</h2>
         <ul className='contact'>
         <li>
        <FaLinkedin/> <a href='https://www.linkedin.com/in/deividas-skirgaila-7a6b00253/' target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -43,14 +44,14 @@ function App() {
         </ul>
       </section>
       <section>
-            <h2>Education</h2>
+            <h2>Edukacija</h2>
             <h3>CodeAcademy</h3>
-            <p>Front-end/intensive/480h-courses</p>
+            <p>Front-end/intensyvus/480h-kursai</p>
             <img className="photo" src={Image} alt="img" />
           </section>
 
       <section>
-            <h2>Skills</h2>
+            <h2>Įgūdžiai</h2>
             <ul>
               <li className="bold">React</li>
               <li className="bold">JavaScript</li>
@@ -68,31 +69,31 @@ function App() {
       
      
       <section >
-            <h2>About Me</h2>
+            <h2>Apie mane</h2>
             <p >
-            As a passionate front-end developer, I excel in crafting user-friendly web applications using React, JavaScript, and CSS. With a proactive learning approach, I stay updated with the latest advancements in web development, enabling me to adapt swiftly and deliver innovative solutions. I thrive on pushing boundaries, creating memorable online experiences, and collaborating with forward-thinking teams. Let's create something exceptional together!
+            Kaip aistringas WEB kūrėjas, man puikiai sekasi kurti patogias žiniatinklio programas naudojant React, JavaScript ir CSS. Taikydamas savarankišką mokymosi metodą, nuolat matau naujausius žiniatinklio kūrimo pasiekimus, todėl galiu greitai prisitaikyti ir pateikti naujoviškus sprendimus. Man sekasi peržengti ribas, kurti įsimintinas internetines patirtis ir bendradarbiauti su pažangiomis komandomis. Esu motyvuotas mokytis ir tobulėti šitoje srityje.
             </p>
           </section>
           <section >
-            <h2>Work Experience</h2>
-            <h3>Parcel Sorter</h3>
+            <h2>Darbinė patirtis</h2>
+            <h3>Siuntų rūšiuotjas</h3>
             <p>DPD Lithuania</p>
+            <p>2021-2022</p>
             <ul>
-              <li>Sorting parcels by regions, cities.</li>
-              <li>Unloading and loading parcels into trailers manually</li>
+              <li>Siuntų rūšiavimas pagal regionus, miestus.</li>
+              <li>Siuntų iškrovimas ir pakrovimas į priekabas rankiniu būdu</li>
               <li>
-                Unloading and loading of freight transport with an electric
-                forklift
+              Krovinio transporto iškrovimas ir pakrovimas elektriniu šakiniu krautuvu
               </li>
-              <li>Filling out CMR documents.</li>
-              <li>Warehouse maintenance and organization.</li>
+              <li>CMR dokumentų pildymas.</li>
+              <li>Sandėlio priežiūra ir organizavimas.</li>
             </ul>
           </section> 
           <section >
-            <h2>Languages</h2>
+            <h2>Kalbos</h2>
             <ul>
-              <li>Lithuanian</li>
-              <li>English</li>
+              <li>Lietuvių</li>
+              <li>Anglų</li>
             </ul> 
             </section>
 
@@ -103,4 +104,4 @@ function App() {
   );
 }
 
-export default App;
+export default CV;
